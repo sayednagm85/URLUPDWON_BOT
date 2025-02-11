@@ -8,7 +8,7 @@ def start(update: Update, context: CallbackContext) -> None:
     update.message.reply_text("مرحبًا! هذا بوت تحميل الفيديوهات من الروابط.")
 
 def main():
-    updater = Updater(8132471722:AAHM4HMuQUtd4Dqpppu7793FBZVNZ1_86NI)
+    updater = Updater(token)
     dp = updater.dispatcher
     dp.add_handler(CommandHandler("start", start))
     updater.start_polling()
